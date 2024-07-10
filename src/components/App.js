@@ -3,9 +3,9 @@ import Editor from './Editor'
 import useLocalStorage from '../hooks/uselocalstorage'
 
 function App() {
-  const [html, setHtml] = useLocalStorage('html', '')
-  const [css, setCss] = useLocalStorage('css', '')
-  const [js, setJs] = useLocalStorage('js', '')
+  const [html, setHtml] = useLocalStorage('html','')
+  const [css, setCss] = useLocalStorage('css','')
+  const [js, setJs] = useLocalStorage('js','')
   const [srcDoc, setSrcDoc] = useState('')
 
   useEffect(() => {
@@ -49,7 +49,7 @@ function App() {
           srcDoc={srcDoc}
           title="output"
           sandbox="allow-scripts"
-          frameBorder =  "0"
+          frameBorder = "0"
           width="100%"
           height="100%"
         />
