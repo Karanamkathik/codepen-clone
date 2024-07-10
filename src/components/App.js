@@ -49,7 +49,7 @@ function App() {
           srcDoc={srcDoc}
           title="output"
           sandbox="allow-scripts"
-          frameBorder = "0"
+          border-width= "0px"
           width="100%"
           height="100%"
         />
